@@ -10,6 +10,7 @@ export default defineConfig({
       input: {
         main: 'index.html',
         shop: 'shop.html',
+        singleProduct : "single-product.html"
        
       },
     },

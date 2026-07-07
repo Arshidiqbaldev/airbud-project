@@ -87,4 +87,26 @@ document.body.insertAdjacentElement("beforeend", footerDiv)
 
 
 
+// p-card
+
+
+const observer = new IntersectionObserver(function (entries) {
+    entries.forEach((i) => {
+        if (i.isIntersecting) {
+            i.target.classList.add("animate-fadeIn");
+        }
+    });
+
+}, { threshold: 0.10 });
+
+
+const pCard = document.querySelectorAll(".p-card");
+
+
+pCard.forEach((p, index) => {
+
+    observer.observe(p);
+    p.style.animationDelay = `${index * 200}ms`;
+})
+
 
