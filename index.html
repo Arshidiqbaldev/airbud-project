@@ -1,13 +1,403 @@
 <!doctype html>
-<html lang="en">
-  <head>
+<html lang="en" data-theme="light">
+
+<head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>new-project</title>
-  </head>
-  <body>
-   
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    <title>Home page</title>
+
+</head>
+
+<body class="relative  text-base-content text-base  tracking-tight font-custom transition-all duration-500 ease-in ">
+
+    <div class="relative -z-1 h-full w-full bg-white">
+        <div
+            class="fixed h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]">
+        </div>
+    </div>
+
+
+    <main class="main flex flex-col relative items-center w-full min-h-screen">
+        <header class="flex  justify-center py-4 fixed w-[85%] md:w-full ">
+            <div class="w-full flex flex-col gap-2 h-auto max-w-3xl">
+
+                <div
+                    class="column-1 flex justify-between gap-2 p-2 w-full   bg-base-300/60  backdrop-blur-xs touch-auto will-change-auto items-center  rounded-md relative">
+
+
+                    <a href="index.html">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-10 text-primary"
+                            viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+                            <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path
+                                    d="M3 12.833c0-.781 0-1.172.207-1.442q.08-.105.184-.184C3.661 11 4.051 11 4.833 11h14.334c.781 0 1.172 0 1.442.207q.105.08.184.184c.207.27.207.66.207 1.442V13c0 3.75 0 5.625-.955 6.939a5 5 0 0 1-1.106 1.106C17.625 22 15.749 22 12 22s-5.625 0-6.939-.955a5 5 0 0 1-1.106-1.106C3 18.625 3 16.749 3 13z" />
+                                <path
+                                    d="M3.5 5.941V4.625A2.625 2.625 0 0 1 6.125 2A4.375 4.375 0 0 1 10.5 6.375V11H6.794V9.236a.824.824 0 0 0-.823-.824A2.47 2.47 0 0 1 3.5 5.942Zm17 0V4.625A2.625 2.625 0 0 0 17.875 2A4.375 4.375 0 0 0 13.5 6.375V11h3.706V9.236c0-.455.369-.824.823-.824a2.47 2.47 0 0 0 2.471-2.47ZM8 11a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2"
+                                    opacity=".5" />
+                            </g>
+                        </svg>
+
+                    </a>
+
+                    <div id="menu-toggle"
+                        class="flex flex-col menu-toggle w-10 gap-2 h-full items-center justify-center *:transition-all *:duration-500 *:ease-in  cursor-pointer">
+                        <span class="toggle-line bg-base-content h-0.5 w-full rounded-full"></span>
+                        <span class="toggle-line bg-base-content h-0.5 w-full rounded-full"></span>
+                    </div>
+
+                </div>
+
+                <div id="column-2"
+                    class="column-2  overflow-hidden max-h-0 flex flex-col gap-2  transition-all duration-500 ease-linear w-full">
+
+                    <div
+                        class="flex flex-col gap-5 p-4 justify-between  bg-base-300/60 rounded-md backdrop-blur-xs touch-auto will-change-auto ">
+
+                        <div class="flex gap-2 justify-between">
+
+                            <nav class="block ">
+                                <ul
+                                    class=" ulist flex flex-col *:text-2xl *:block font-custom-2  *:capitalize gap-5 *:hover:text-primary *:transition-all *:duration-500 *:ease-in *:cursor-pointer">
+                                    <li class="li"><a href="index.html">Home</a></li>
+                                    <li class="li"><a href="shop.html">shop</a></li>
+                                    <li class="li"><a href="">Contact</a></li>
+                                    <li class="li"><a href="">News</a></li>
+                                    <li class="li"><a href="">Account</a></li>
+
+                                </ul>
+                            </nav>
+
+
+
+                        </div>
+
+
+                        <div
+                            class="flex self-start  gap-2 p-2 bg-base-300/10 border border-base-content/20 rounded-md *:w-8 *:text-base-content/80 *:cursor-pointer *:hover:text-primary *:transition-all *:duration-500 ease-in ">
+
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5">
+                                    <circle cx="9.549" cy="19.049" r="1.701" />
+                                    <circle cx="16.96" cy="19.049" r="1.701" />
+                                    <path
+                                        d="m5.606 5.555l2.01 6.364c.309.978.463 1.467.76 1.829c.26.32.599.567.982.72c.435.173.947.173 1.973.173h3.855c1.026 0 1.538 0 1.972-.173c.384-.153.722-.4.983-.72c.296-.362.45-.851.76-1.829l.409-1.296l.24-.766l.331-1.05a2.5 2.5 0 0 0-2.384-3.252zm0 0l-.011-.037a7 7 0 0 0-.14-.42a2.92 2.92 0 0 0-2.512-1.84C2.84 3.25 2.727 3.25 2.5 3.25" />
+                                </g>
+                            </svg>
+
+
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                    d="M12 13.826a3.506 3.506 0 1 0 0-7.013a3.506 3.506 0 0 0 0 7.013m0 0a6 6 0 0 1 5.953 5.254M12 13.826a6 6 0 0 0-5.953 5.254m0 0A9.2 9.2 0 0 0 12 21.25a9.2 9.2 0 0 0 5.953-2.17m-11.906 0a9.25 9.25 0 1 1 11.907 0" />
+                            </svg>
+
+
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </header>
+
+        <div class="hero flex flex-col md:flex-row *:w-full gap-8 py-25 w-[90%] md:w-full max-w-6xl ">
+
+            <div class="content flex flex-col gap-4 items-start   ">
+                <h1 class="font-normal text-4xl md:text-6xl capitalize font-custom-2 w-full">
+                    AirBuds X Pure Sound. Zero Noise<span class="text-primary">.</span>
+                </h1>
+
+                <p class="desc w-full">
+                    Experience next‑gen wireless audio engineered for comfort, clarity, and all‑day performance.
+                    Designed for creators, gamers, and everyday listeners who demand more from their sound.
+                </p>
+
+                <a href="#models" class="btn bg-primary text-white rounded-sm cursor-pointer">Explore
+                    Models</a>
+
+
+            </div>
+
+            <div class="p-img flex p-2  rounded-sm ">
+                <img src="src/assets/Copilot_20260704_141301.png" alt=""
+                    class="size-full drop-shadow-md drop-shadow-base-content/30">
+            </div>
+
+        </div>
+
+
+
+        <div class="category flex flex-col  *:w-full gap-8 py-10 w-[90%] md:w-full max-w-6xl">
+
+            <h2 class="font-custom-2 text-4xl capitalize text-center">top products<span class="text-primary">.</span>
+            </h2>
+
+            <div class="grid grid-cols-2 grid-rows-2 md:grid-cols-4 gap-2 md:grid-rows-1 ">
+
+
+                <div class="c-card flex flex-col gap-2 p-2 rounded-sm justify-center items-center bg-base-300/60">
+
+
+                    <img src="src/assets/Copilot_20260704_141301.png" alt="" class="p-img  w-50">
+
+                </div>
+
+                <div class="c-card flex flex-col gap-2 p-2 rounded-sm justify-center items-center bg-base-300/60">
+
+
+                    <img src="src/assets/Copilot_20260704_1413311.png" alt="" class="p-img  w-50">
+
+                </div>
+
+                <div class="c-card flex flex-col gap-2 p-2 rounded-sm justify-center items-center bg-base-300/60">
+
+
+                    <img src="src/assets/Copilot_20260704_173303.png" alt="" class="p-img w-50">
+
+                </div>
+
+                <div class="c-card flex flex-col gap-2 p-2 rounded-sm justify-center items-center bg-base-300/60">
+
+
+                    <img src="src/assets/Copilot_20260704_174236.png" alt="" class="p-img  w-50">
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="p-represent flex flex-col justify-between *:w-full gap-1 py-20 w-[90%] md:w-full max-w-6xl">
+            <img src="src/assets/Copilot_20260704_174236.png" alt="" class="w-full rounded-md h-100 object-contain ">
+
+            <div class="grid  gap-4 grid-cols-2 grid-rows-2  md:grid-cols-4 md:grid-rows-1  ">
+                <div class="p-repres flex flex-col gap-4  items-center ">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-primary size-10"
+                        viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1.5">
+                            <path
+                                d="M6.867 5.543a1.58 1.58 0 0 0-2.155.576a1.57 1.57 0 0 0 .577 2.15l2.63 1.515a1 1 0 0 1 .5.866v3.536a1 1 0 0 1-.134.5l-2.408 4.162a1.57 1.57 0 0 0 .577 2.15a1.58 1.58 0 0 0 2.156-.576l3.258-5.629h.258l3.258 5.629a1.58 1.58 0 0 0 2.156.576a1.57 1.57 0 0 0 .577-2.15l-2.402-4.15a1 1 0 0 1-.135-.502V10.65a1 1 0 0 1 .501-.866l2.63-1.514a1.57 1.57 0 0 0 .577-2.15a1.58 1.58 0 0 0-2.155-.577l-3.636 2.094a3 3 0 0 1-2.994 0z" />
+                            <path d="M14.623 5.414a2.623 2.623 0 1 1-5.246 0a2.623 2.623 0 0 1 5.246 0" />
+                        </g>
+                    </svg>
+
+                    <span class="text-md capitalize">best accessabiltiy</span>
+                </div>
+
+                <div class="p-repres flex flex-col gap-4  items-center ">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-primary size-10"
+                        viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M2.75 12h10.5m0 0a2.5 2.5 0 0 0 5 0m-5 0a2.5 2.5 0 0 1 5 0m0 0h3M7.75 5.25h13.5m-13.5 0a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0m-5 13.5h3m0 0a2.5 2.5 0 0 0 5 0m-5 0a2.5 2.5 0 0 1 5 0m0 0h10.5" />
+                    </svg>
+
+                    <span class="text-md capitalize">smart setting</span>
+                </div>
+
+                <div class="p-repres flex flex-col gap-4  items-center ">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-primary size-10"
+                        viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                        <g fill="none">
+                            <rect width="16" height="12" x="2.75" y="6" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="1.5" rx="3.25" />
+                            <rect width="11" height="7" x="5.25" y="8.5" fill="currentColor" rx="1.5" />
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5" d="M21.25 10v4" />
+                        </g>
+                    </svg>
+
+                    <span class="text-md capitalize">long life battery</span>
+                </div>
+
+                <div class="p-repres flex flex-col gap-4  items-center ">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-primary size-10"
+                        viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="m6.25 7.5l5.454 4.5m0 0l5.246 3.982a.65.65 0 0 1 0 1.036l-4.202 3.19a.65.65 0 0 1-1.043-.517V4.31a.65.65 0 0 1 1.043-.518l4.202 3.19a.65.65 0 0 1 0 1.036zm0 0L6.25 16.5" />
+                    </svg>
+
+                    <span class="text-md capitalize">fast connection</span>
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+        <div id="models"
+            class="product-list flex flex-col justify-between *:w-full gap-8 py-20 w-[90%] md:w-full max-w-6xl scroll-m-10">
+
+            <h2 class="text-4xl font-custom-2 capitalize">best sells<span class="text-primary">.</span></h2>
+
+            <div class="p-grid gap-2 grid grid-cols-1 md:grid-cols-3  row-auto">
+
+                <div class="p-card flex flex-col gap-4 bg-base-300/60 p-2 rounded-md">
+                    <img src="src/assets/Copilot_20260704_1413311.png" alt="" class="p-img">
+                    <div class="p-info flex justify-between items-center text-md capitalize ">
+                        <span class="p-name">black</span>
+                        <span class="price">99$</span>
+                    </div>
+                </div>
+
+                <div class="p-card flex flex-col gap-4 bg-base-300/60 p-2 rounded-md">
+                    <img src="src/assets/Copilot_20260704_141301.png" alt="" class="p-img">
+                    <div class="p-info flex justify-between items-center text-md capitalize ">
+                        <span class="p-name">black</span>
+                        <span class="price">99$</span>
+                    </div>
+                </div>
+
+                <div class="p-card flex flex-col gap-4 bg-base-300/60 p-2 rounded-md">
+                    <img src="src/assets/Copilot_20260704_174236.png" alt="" class="p-img">
+                    <div class="p-info flex justify-between items-center text-md capitalize ">
+                        <span class="p-name">black</span>
+                        <span class="price">99$</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <div
+            class="flex  items-center justify-center bg-[url(src/assets/pixel-buds-2-in-ear-clearly-white.webp)] gap-8  w-[90%] min-h-100  max-w-6xl bg-cover bg-top bg-no-repeat">
+
+
+
+        </div>
+
+        <div class="flex flex-col md:flex-row *:w-full gap-8 py-20 w-[90%] md:w-full max-w-6xl">
+            <div class="flex flex-col gap-4 w-full items-start justify-start">
+
+
+                <h2 class="text-4xl font-custom-2 ">Why people order from Us<span class="text-primary">.</span></h2>
+
+                <p>Clear pricing, fast replies, and simple help for choosing the brand</p>
+
+                <a href="shop.html" class="btn">shop now</a>
+
+            </div>
+
+            <div>
+                <!-- name of each tab group should be unique -->
+                <div class="tabs tabs-lift">
+                    <label class="tab gap-2">
+                        <input type="radio" name="my_tabs_4" checked="checked" />
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5"
+                            viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5"
+                                d="M19.75 5.623V9.52a4 4 0 0 1-4 4H3.871m4.236 4.857L4.31 14.58a1.5 1.5 0 0 1-.44-1.061m4.236-4.857L4.31 12.46c-.293.293-.44.677-.44 1.061" />
+                        </svg>
+                        policy
+                    </label>
+                    <div class="tab-content bg-base-100 border-base-300 p-6">
+                        <div class="flex flex-col gap-2 py-4">
+
+                            <span class="text-xl capitalize">return policy</span>
+
+                            <p>If there is a valid product issue, quick return and replacement support is available.</p>
+                        </div>
+                    </div>
+
+                    <label class="tab">
+                        <input type="radio" name="my_tabs_4" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-4 me-2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+                        </svg>
+                        Delivery
+                    </label>
+                    <div class="tab-content bg-base-100 border-base-300 p-6">
+                        <div class="flex flex-col gap-2 py-4">
+                            <span class="text-xl capitalize">Free Delivery</span>
+                            <p>Selected orders in major Pakistani cities can qualify for delivery support with clear
+                                confirmation before dispatch.</p>
+                        </div>
+                    </div>
+
+                    <label class="tab gap-2">
+                        <input type="radio" name="my_tabs_4" />
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5"
+                            viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5"
+                                d="M20.25 10.907V7.272c0-.829-.633-1.521-1.453-1.644c-.951-.142-2.18-.376-3.078-.722c-.907-.349-1.997-1.007-2.762-1.505a1.76 1.76 0 0 0-1.914 0c-.764.498-1.855 1.156-2.762 1.505c-.899.346-2.127.58-3.078.722c-.82.123-1.453.815-1.453 1.644v3.635a10.13 10.13 0 0 0 5.363 8.939l.23.123l1.962.946a1.6 1.6 0 0 0 1.39 0l1.961-.946l.23-.123a10.13 10.13 0 0 0 5.364-8.939" />
+                        </svg>
+                        Support
+                    </label>
+                    <div class="tab-content bg-base-100 border-base-300 p-6">
+                        <div class="flex flex-col gap-2 py-4">
+
+                            <span class="text-xl capitalize">24/7 support</span>
+
+                            <p>Cash on delivery keeps checkout simple, familiar, and easier to trust for customers
+                                across Pakistan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="questionss flex flex-col items-center justify-center  gap-8 py-20 w-[90%] md:w-full max-w-6xl">
+            <h2 class="text-4xl font-custom-2 text-center">Questions & Answers<span class="text-primary">.</span></h2>
+            <div class="flex flex-col gap-2 w-full md:w-1/2 overflow-hidden">
+                <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-3" checked="checked" />
+                    <div class="collapse-title font-semibold">How do I create an account?</div>
+                    <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow
+                        the registration process.</div>
+                </div>
+                <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
+                    <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the
+                        instructions sent to your email.</div>
+                </div>
+                <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title font-semibold">How do I update my profile information?</div>
+                    <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make
+                        changes.</div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </main>
+
+
+    <script type="module" src="src/main.js"></script>
+    <script type="module" src="src/myscripts.js"></script>
+
+
+</body>
+
 </html>
