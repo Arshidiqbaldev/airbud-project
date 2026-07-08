@@ -14,7 +14,7 @@
 @theme {
     --font-custom: "Bricolage Grotesque", sans-serif;
     --font-custom-2: "Orbitron", sans-serif;
-    --animate-fadeIn: fadeIn 1s ease both;
+    --animate-fadeIn: fadeIn 1.5s ease both;
 
     @keyframes fadeIn {
 
