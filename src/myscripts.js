@@ -30,10 +30,18 @@ togIcon.addEventListener("click", () => {
 // footer
 
 const footerDiv = document.createElement("div");
+const mainDiv = document.querySelectorAll(".main");
 
 
-footerDiv.innerHTML = `
-    <footer class="footer z-10 flex flex-col justify-between  gap-8 py-10 w-full md:w-full bg-base-300/60 ">
+
+
+
+mainDiv.forEach((main) => {
+
+    const footerContent = document.createElement("footer");
+    footerContent.className = "footer z-10 flex flex-col justify-between w-full  gap-8 py-10 w-full  bg-base-300/60";
+    footerContent.innerHTML = `
+    
 
 
             <div class="flex flex-col gap-20 justify-center items-center w-full">
@@ -71,18 +79,18 @@ footerDiv.innerHTML = `
                         build with love by <a href="https://arshidiqbal.net" class="text-primary">arshiddesigner</a>
                     </p>
                 </div>
-
-
-
-
             </div>
 
 
 
-        </footer>`
+        `;
+
+        main.insertAdjacentElement("beforeend" , footerContent);
 
 
-document.body.insertAdjacentElement("beforeend", footerDiv)
+
+}
+);
 
 
 
